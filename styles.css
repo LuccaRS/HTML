@@ -1,0 +1,28 @@
+body {
+  font-family: 'League Spartan', sans-serif;
+  background-color: blue;
+  color: white;
+  display: flex;
+}
+
+h1 {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  color: rgb(0, 0, 0);
+}
+
+span {
+  color: #00FFBB;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.doguingo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100vh;
+}
