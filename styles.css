@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +18,7 @@ body {
   font-family: 'League Spartan', sans-serif;
   background-color: blue;
   color: white;
-  display: flex;
+  box-sizing: border-box; /* Border-box deixa dentro do elemento pai, diferente do content-box*/
 }
 
 h1 {
@@ -32,11 +34,21 @@ span {
   font-weight: bold;
 }
 
-.doguingo {
-  position: absolute;
-  flex-direction: column;
-  justify-content: center;
+.apresentacao {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin: 10% 15%;
+  gap: 1rem;
+}
+
+.apresentacao__titulo {
+  font-size: 32px;
+  width: 350px;
+}
+
+.doguingo {
+  position: relative;
   width: 25%;
   height: 100vh;
   top: 50%;
@@ -51,27 +63,23 @@ li {
   color: white;
 }
 
-.card {
+.botoes {
+  display: flex;
+  justify-content: space-between;
+}                                   
 
-  margin: 0 auto;
-  padding: 2em;
-  width: 300px;
-  background: var(--color1);
+.botoes__link {
+
+  background-color: #bdbdc2;
+  width: 8rem;
+  text-decoration: none;
   text-align: center;
-  border-radius: 10px;
-}
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  border-radius: 16px;
+  padding: 20px 0 ; /* o padding funciona como o primeiro para o eixo y e o segundo para o eixo x */
+  margin-top: 1rem;
 
-.card::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: var(--colorRaibown);
-  z-index: -1;
-  border-radius: 10px;
-  padding: 3%;
+  /*  padding é do centro do objeto a borda e margin é do que tá de fora para dentro */
 }
